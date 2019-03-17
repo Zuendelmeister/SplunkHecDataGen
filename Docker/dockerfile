@@ -1,0 +1,15 @@
+FROM ubuntu
+# Update
+WORKDIR /work
+RUN apt-get update
+RUN apt-get install -y python 
+RUN apt-get install -y python-pip
+ 
+# Install app dependencies
+RUN pip install --upgrade pip
+RUN pip install requests
+
+
+COPY SplunkHecDataGen.py /work/
+
+ENTRYPOINT ["python", "/work/SplunkHecDataGen.py"]
