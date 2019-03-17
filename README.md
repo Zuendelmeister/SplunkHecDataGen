@@ -22,7 +22,7 @@ There are optional environment variable that you can add to the docker run comma
 #### Key 
 KEY: This changes "Value" to the value of your key.
 Example:
-docker run --name splunk-hec-datagen --network host -e URL=<url> -e TOKEN=<token>  -r KEY="Temperature" splunk-hec-datagen
+docker run --name splunk-hec-datagen --network host -e URL=<url> -e TOKEN=<token>  -e KEY="Temperature" splunk-hec-datagen
 In this case the resulting message will look like this:
 ```
 {
