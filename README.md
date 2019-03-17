@@ -15,8 +15,8 @@ Install docker: https://docs.docker.com/install/
 
 ## On Windows
 Edit the dockerBuildRunAndLog.bat file. 
-Change  "<url>"  to the url of your splunk http event collector url.
-Also change  "<token>" with your splunk token.
+Change  url  to the url of your splunk http event collector url.
+Also change  token with your splunk token.
 ### Optional:
 There are optional environment variable that you can add to the docker run command in the dockerBuildRunAndLog.bat file.
 #### Key 
